@@ -2,7 +2,7 @@ FROM ubuntu
 MAINTAINER go@furion.me
 
 # Install prerequisites
-RUN apt-get update && apt-get install build-essential curl git mercurial -y
+RUN apt-get update && apt-get install build-essential curl git mercurial bzr -y
 
 # Install Go Compiler
 ENV GOLANG_VERSION 1.4.2
