@@ -5,7 +5,7 @@ MAINTAINER go@furion.me
 RUN apt-get update && apt-get install build-essential curl git mercurial bzr -y
 
 # Install Go Compiler
-ENV GOLANG_VERSION 1.4.2
+ENV GOLANG_VERSION 1.5.1
 RUN curl -sSL https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz \
         | tar -v -C /usr/src -xz
 RUN cd /usr/src/go/src && ./make.bash --no-clean 2>&1
